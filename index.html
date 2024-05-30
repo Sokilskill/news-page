@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Scalability Solution</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <a class="logo header-logo" href="/">Logo</a>
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="#news1">New</a></li>
+            <li class="nav-item"><a class="nav-link" href="#news2">New2</a></li>
+            <li class="nav-item"><a class="nav-link" href="#news3">New3</a></li>
+            <li class="nav-item"><a class="nav-link" href="#news4">New4</a></li>
+            <li class="nav-item"><a class="nav-link" href="#news5">New5</a></li>
+            <li class="nav-item"><a class="nav-link" href="#news6">New6</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacts">Contact Us </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="container main-container">
+          <section class="blog">
+            <h5 class="blog-path">
+              Cryptocurrencies&gt;Bitcoin&gt;<span class="blolg-path-bold"
+                >News</span
+              >
+            </h5>
+
+            <div class="title-wrapper">
+              <h1 class="title blog-section-title">
+                The Scalability Solution: Understanding Layer One vs. Layer Two
+                Blockchains
+              </h1>
+              <p class="blog-data">
+                <time datetime="2023-09-20T20:00">20 Sep 2023, 8:00pm</time>
+              </p>
+              <p class="blog-author"><b>by Alex House</b></p>
+            </div>
+
+            <img
+              class="blog-img"
+              src="./public/images/image-24.png"
+              alt="bitcoin"
+            />
+            <ul class="blog-text-list">
+              <li class="blog-text-item">
+                <p class="blog-text">
+                  Layer one or L1 refers to a base blockchain protocol like
+                  Bitcoin or Ethereum. These networks operate on a decentralized
+                  ledger secured by
+                  <a
+                    class="blog-text-link"
+                    href="https://news.bitcoin.com/deciphering-the-differences-between-proof-of-stake-and-proof-of-work/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >proof-of-work (PoW) mining or proof-of-stake (PoS)
+                    staking</a
+                  >. L1 chains such as Bitcoin and Ethereum offer unparalleled
+                  security. However, during peak times, both of these chains
+                  grapple with sluggish transaction speeds and steep fees.
+                </p>
+              </li>
+              <li class="blog-text-item">
+                <p class="blog-text">
+                  Developers from several L1 networks are working to improve
+                  layer one scaling through methods like
+                  <a
+                    class="blog-text-link"
+                    href="https://news.bitcoin.com/bitcoin-cash-upgrade-milestone-complete-32mb-and-new-features/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    >increasing</a
+                  >
+                  block size,
+                  <a
+                    class="blog-text-link"
+                    href="https://news.bitcoin.com/what-is-eip-4844-a-look-at-proto-danksharding-and-its-effect-on-rollup-fees/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    >sharding</a
+                  >, and
+                  <a
+                    class="blog-text-link"
+                    href="https://news.bitcoin.com/what-is-the-merge-a-brief-explanation-of-ethereums-transition-from-proof-of-work-to-proof-of-stake/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    >introducing</a
+                  >
+                  proof-of-stake consensus. However, substantial layer one
+                  upgrades require coordination among node operators and can
+                  take years to implement. Some blockchains intend to use L2
+                  protocols as either a temporary or long-term solution.
+                </p>
+              </li>
+              <li class="blog-text-item">
+                <p class="blog-text">
+                  Bitcoin’s
+                  <a
+                    href="https://lightning.network/lightning-network-paper.pdf"
+                    target="_blank"
+                    rel="noopener noreffer"
+                    class="blog-text-link"
+                    >Lightning Network</a
+                  >
+                  (LN) is a second-layer scaling solution designed to facilitate
+                  faster, low-cost transactions on the Bitcoin blockchain (L1).
+                  It operates on top of Bitcoin’s base layer, allowing for
+                  instant payments by circumventing the need for block
+                  confirmations.
+                </p>
+              </li>
+              <li class="blog-text-item">
+                <p class="blog-text">
+                  Transactions on the Lightning Network occur off-chain in
+                  payment channels between users. Only channel open and close
+                  transactions are recorded on the Bitcoin blockchain.
+                  Participants can transact multiple times within these
+                  channels, reducing congestion and fees on L1.
+                </p>
+              </li>
+              <li class="blog-text-item">
+                <p class="blog-text">
+                  Critics target LN for its prevalent use of custodial wallets,
+                  as these demand users place trust in third parties to handle
+                  their money. Moreover, the off-chain method poses a risk: if
+                  nodes lack proper backup, it could trigger an irrevocable loss
+                  of funds.
+                </p>
+              </li>
+
+              <li class="blog-text-item">
+                <p class="blog-text">
+                  Loopring uses zero-knowledge rollups
+                  <a
+                    href="https://news.bitcoin.com/what-are-rollups-ethereums-main-scaling-solution-examined/"
+                    class="blog-text-link"
+                    target="_blank"
+                    rel="noopener noreffer"
+                    >(ZK-rollups)</a
+                  >
+                  to batch hundreds of transactions off-chain and generate a
+                  cryptographic proof verifying their validity. This proof is
+                  submitted to layer one (Ethereum), avoiding the need to
+                  process each transaction on-chain
+                </p>
+              </li>
+              <li class="blog-text-item">
+                <p class="blog-text">
+                  Polygon ZKEVM also uses ZK-rollup technology to offer high
+                  throughput Ethereum transactions with lower fees. On the risk
+                  side, some believe that relying heavily on ZK-rollups can
+                  introduce
+                  <a
+                    href="https://arxiv.org/pdf/2306.02785.pdf"
+                    class="blog-text-link"
+                    target="_blank"
+                    rel="noopener noreffer"
+                    >centralization risks</a
+                  >
+                  as validators and sequencers become key to the system.
+                </p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="news">
+            <h2 class="title title-news-section">More News</h2>
+            <ul class="news-list">
+              <li class="news-item">
+                <article>
+                  <a id="news1" class="news-link" href="./">
+                    <img
+                      class="news-img"
+                      src="./public/images/news-1.png"
+                      alt="img news"
+                    />
+                    <div class="news-desc">
+                      <h3 class="news-title">
+                        U.S. downs suspected Chinese spy balloon
+                      </h3>
+                      <p class="news-text">
+                        China called the vessel’s downing “an excessive
+                        reaction” and said it “retains the right to respond...
+                      </p>
+                      <p class="news-author">
+                        Craig Bator -
+                        <time class="news-date" datetime="2020-12-27"
+                          >27 Dec 2020</time
+                        >
+                      </p>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="news-item">
+                <article>
+                  <a id="news2" class="news-link" href="./">
+                    <img
+                      class="news-img"
+                      src="./public/images/news-2.png"
+                      alt="img news"
+                    />
+                    <div class="news-desc">
+                      <h3 class="news-title">
+                        U.S. downs suspected Chinese spy balloon
+                      </h3>
+                      <p class="news-text">
+                        China called the vessel’s downing “an excessive
+                        reaction” and said it “retains the right to respond...
+                      </p>
+                      <p class="news-author">
+                        Craig Bator -
+                        <time class="news-date" datetime="2020-12-27"
+                          >27 Dec 2020</time
+                        >
+                      </p>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="news-item">
+                <article>
+                  <a id="news3" class="news-link" href="./">
+                    <img
+                      class="news-img"
+                      src="./public/images/news-3.png"
+                      alt="img news"
+                    />
+                    <div class="news-desc">
+                      <h3 class="news-title">
+                        U.S. downs suspected Chinese spy balloon
+                      </h3>
+                      <p class="news-text">
+                        China called the vessel’s downing “an excessive
+                        reaction” and said it “retains the right to respond...
+                      </p>
+                      <p class="news-author">
+                        Craig Bator -
+                        <time class="news-date" datetime="2020-12-27"
+                          >27 Dec 2020</time
+                        >
+                      </p>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="news-item">
+                <article>
+                  <a id="news4" class="news-link" href="./">
+                    <img
+                      class="news-img"
+                      src="./public/images/news-4.png"
+                      alt="img news"
+                    />
+                    <div class="news-desc">
+                      <h3 class="news-title">
+                        U.S. downs suspected Chinese spy balloon
+                      </h3>
+                      <p class="news-text">
+                        China called the vessel’s downing “an excessive
+                        reaction” and said it “retains the right to respond...
+                      </p>
+                      <a href="/author" class="news-author">
+                        Craig Bator -
+                        <time class="news-date" datetime="2020-12-27"
+                          >27 Dec 2020</time
+                        >
+                      </a>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="news-item">
+                <article>
+                  <a id="news5" class="news-link" href="./">
+                    <img
+                      class="news-img"
+                      src="./public/images/news-5.png"
+                      alt="img news"
+                    />
+                    <div class="news-desc">
+                      <h3 class="news-title">
+                        U.S. downs suspected Chinese spy balloon
+                      </h3>
+                      <p class="news-text">
+                        China called the vessel’s downing “an excessive
+                        reaction” and said it “retains the right to respond...
+                      </p>
+                      <p class="news-author">
+                        Craig Bator -
+                        <time class="news-date" datetime="2020-12-27"
+                          >27 Dec 2020</time
+                        >
+                      </p>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="news-item">
+                <article>
+                  <a id="news6" class="news-link" href="./">
+                    <img
+                      class="news-img"
+                      src="./public/images/news-3.png"
+                      alt="img news"
+                    />
+                    <div class="news-desc">
+                      <h3 class="news-title">
+                        U.S. downs suspected Chinese spy balloon
+                      </h3>
+                      <p class="news-text">
+                        China called the vessel’s downing “an excessive
+                        reaction” and said it “retains the right to respond...
+                      </p>
+                      <p class="news-author">
+                        Craig Bator -
+                        <time class="news-date" datetime="2020-12-27"
+                          >27 Dec 2020</time
+                        >
+                      </p>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="news-item">
+                <article>
+                  <a class="news-link" href="./">
+                    <img
+                      class="news-img"
+                      src="./public/images/news-5.png"
+                      alt="img news"
+                    />
+                    <div class="news-desc">
+                      <h3 class="news-title">
+                        U.S. downs suspected Chinese spy balloon
+                      </h3>
+                      <p class="news-text">
+                        China called the vessel’s downing “an excessive
+                        reaction” and said it “retains the right to respond...
+                      </p>
+                      <p class="news-author">
+                        Craig Bator -
+                        <time class="news-date" datetime="2020-12-27"
+                          >27 Dec 2020</time
+                        >
+                      </p>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="news-item">
+                <article>
+                  <a class="news-link" href="./">
+                    <img
+                      class="news-img"
+                      src="./public/images/news-6.png"
+                      alt="img news"
+                    />
+                    <div class="news-desc">
+                      <h3 class="news-title">
+                        U.S. downs suspected Chinese spy balloon
+                      </h3>
+                      <p class="news-text">
+                        China called the vessel’s downing “an excessive
+                        reaction” and said it “retains the right to respond...
+                      </p>
+                      <p class="news-author">
+                        Craig Bator -
+                        <time class="news-date" datetime="2020-12-27"
+                          >27 Dec 2020</time
+                        >
+                      </p>
+                    </div>
+                  </a>
+                </article>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="all-rights-wrapper">
+          <p class="footer-text">
+            Logo Financial Group LLC 2022 Logo. All rights reserved
+          </p>
+          <p class="footer-text">
+            2972 Westheimer Rd. Santa Ana, Illinois 85486
+          </p>
+        </div>
+
+        <ul class="footer-service-list">
+          <li><a class="footer-service-link" href="">lirivacy liolicy</a></li>
+          <li><a class="footer-service-link" href="">Terms of Services</a></li>
+          <li><a class="footer-service-link" href="">Disclaimer</a></li>
+        </ul>
+
+        <div class="adress-wrapper">
+          <address class="footer-text">
+            2972 Westheimer Rd. Santa Ana, Illinois <br />85486
+          </address>
+        </div>
+
+        <address id="contacts" class="contact-wrapper">
+          <p class="footer-text">
+            Phone:
+            <a class="footer-text" href="tel:+4065550120">(406) 555-0120</a>
+          </p>
+          <p class="footer-text">
+            Email:
+            <a class="footer-text" href="mailto:logo@gmail.com"
+              >logo@gmail.com</a
+            >
+          </p>
+        </address>
+        <a class="logo footer-logo" href="/">Logo</a>
+      </div>
+    </footer>
+  </body>
+</html>
